@@ -14,7 +14,6 @@ A modern and responsive job portal web application built with Angular that conne
 
 #  BROWSE JOBS PAGE
 
-![img alt](<img width="1763" height="935" alt="Screenshot_31-5-2026_17330_127 0 0 1" src="https://github.com/user-attachments/assets/18d22ffe-0a94-463a-92af-785502270f90" />)
 
 
 
