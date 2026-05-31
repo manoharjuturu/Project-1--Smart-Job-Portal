@@ -1,4 +1,10 @@
-# Job Portal - Employee Frontend (AngularJS)
+A modern and responsive job portal web application built with Angular that connects job seekers and employers on a single platform. The system provides an efficient way to search, apply, and manage job opportunities while helping recruiters post and manage job listings.
+ 
+ # CREATE ACCOUNT PAGE
+
+ 
+ 
+ # Job Portal - Employee Frontend (AngularJS)
 
 A modern, responsive job portal application built with AngularJS for employees to browse jobs, apply for positions, and manage their applications.
 
