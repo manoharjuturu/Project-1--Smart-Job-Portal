@@ -8,6 +8,9 @@ A modern and responsive job portal web application built with Angular that conne
 
 ![img alt](https://github.com/manoharjuturu/Project-1--Smart-Job-Portal/blob/b6c1822e2442c861a1bcb14983b706e586255706/Screenshot_31-5-2026_17257_127.0.0.1.jpeg)
 
+#  HOME PAGE
+
+![img alt](https://github.com/manoharjuturu/Project-1--Smart-Job-Portal/blob/1d4b5b21acff3ab6e435fc6b7eb7de00257fb0b2/Screenshot_31-5-2026_17318_127.0.0.1.jpeg)
 
 
 
