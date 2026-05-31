@@ -1,8 +1,14 @@
 # Project-1--Smart-Job-Portal
 A modern and responsive job portal web application built with Angular that connects job seekers and employers on a single platform. The system provides an efficient way to search, apply, and manage job opportunities while helping recruiters post and manage job listings.
-
+# CREATE ACCOUNT PAGE
 
 ![img alt](https://github.com/manoharjuturu/Project-1--Smart-Job-Portal/blob/583036d3dbc57b84e487d6472e45c568e9921909/Screenshot_31-5-2026_17234_127.0.0.1.jpeg)
+
+# SIGN IN PAGE
+
+![img alt](https://github.com/manoharjuturu/Project-1--Smart-Job-Portal/blob/b6c1822e2442c861a1bcb14983b706e586255706/Screenshot_31-5-2026_17257_127.0.0.1.jpeg)
+
+
 
 
 
