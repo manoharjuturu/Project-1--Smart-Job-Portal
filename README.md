@@ -16,7 +16,7 @@ The sign page provides a secure and user-friendly authentication system for job 
 
 ![img alt](https://github.com/manoharjuturu/Project-1--Smart-Job-Portal/blob/1d4b5b21acff3ab6e435fc6b7eb7de00257fb0b2/Screenshot_31-5-2026_17318_127.0.0.1.jpeg)
 
-
+The Dashboard serves as the central hub of the HireNest Job Portal, offering quick access to key features such as job browsing, application tracking, and profile management. Interactive cards and navigation menus provide a smooth user experience for job seekers. Platform statistics highlight the number of active jobs, companies, and registered users. The modern layout helps users efficiently manage their job search journey.
 
 #  BROWSE JOBS PAGE
 
