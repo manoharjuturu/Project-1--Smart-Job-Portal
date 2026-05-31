@@ -2,7 +2,9 @@ A modern and responsive job portal web application built with Angular that conne
  
  # CREATE ACCOUNT PAGE
 
- 
+ ![img alt](https://github.com/manoharjuturu/Project-1--Smart-Job-Portal/blob/04f1baaada0d072db734e351378238b22def481f/Screenshot_31-5-2026_17234_127.0.0.1.jpeg)
+
+ This clean and user-friendly Create Account page is designed for a Smart Job Portal application, providing a seamless registration experience for new users. The interface includes essential fields such as Full Name, Email, Password, and Confirm Password, ensuring secure account creation. A modern card-based layout with intuitive icons and clear input validation enhances usability and accessibility. The responsive design and professional appearance help job seekers quickly register and begin exploring career opportunities.
  
  # Job Portal - Employee Frontend (AngularJS)
 
