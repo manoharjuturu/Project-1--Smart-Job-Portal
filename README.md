@@ -10,21 +10,32 @@ This clean and user-friendly Create Account page is designed for a Smart Job Por
 
 ![img alt](https://github.com/manoharjuturu/Project-1--Smart-Job-Portal/blob/b6c1822e2442c861a1bcb14983b706e586255706/Screenshot_31-5-2026_17257_127.0.0.1.jpeg)
 
-#  HOME PAGE
+The sign page provides a secure and user-friendly authentication system for job seekers accessing the HireNest platform. Users can sign in using their registered email and password through a clean and intuitive interface. The responsive design ensures a seamless experience across devices while maintaining a professional appearance. Quick navigation to the registration page enables new users to create an account effortlessly.
+
+#  DASHBOARD PAGE
 
 ![img alt](https://github.com/manoharjuturu/Project-1--Smart-Job-Portal/blob/1d4b5b21acff3ab6e435fc6b7eb7de00257fb0b2/Screenshot_31-5-2026_17318_127.0.0.1.jpeg)
+
+The Dashboard serves as the central hub of the HireNest Job Portal, offering quick access to key features such as job browsing, application tracking, and profile management. Interactive cards and navigation menus provide a smooth user experience for job seekers. Platform statistics highlight the number of active jobs, companies, and registered users. The modern layout helps users efficiently manage their job search journey.
 
 #  BROWSE JOBS PAGE
 
 ![img alt](https://github.com/manoharjuturu/Project-1--Smart-Job-Portal/blob/fc60900b07e715d83c3cf4f663ed997531c357b7/Screenshot_31-5-2026_17330_127.0.0.1.jpeg)
 
+The Browse Jobs Page enables users to explore job opportunities through an advanced search and filtering system. Job seekers can search by keywords, company names, or specific roles to find relevant positions. The clean and organized interface simplifies the job discovery process and improves accessibility. This feature helps users quickly identify opportunities that match their skills and career goals.
+
 #  MY APLLICATIONS PAGE
 
 ![img alt](https://github.com/manoharjuturu/Project-1--Smart-Job-Portal/blob/8ae9f7ae17c6a9778928903120acc5c9722ed82a/Screenshot_31-5-2026_17345_127.0.0.1.jpeg)
 
+The My Applications Page allows users to monitor and manage all submitted job applications from a single location. Applicants can track the status of their applications and stay updated throughout the recruitment process. Filtering options improve organization and make it easier to review application progress. This centralized dashboard enhances transparency and keeps users informed about their job search activities.
+
 # PROFILE PAGE
 
 ![img alt](https://github.com/manoharjuturu/Project-1--Smart-Job-Portal/blob/7fb2a18d2f76cad3332fb9d717dcd2fd3829959e/Screenshot_31-5-2026_17357_127.0.0.1.jpeg)
+
+The Profile Management Page enables users to create and maintain a comprehensive professional profile. It includes sections for personal details, work experience, education, skills, and career information. Users can update their profiles at any time to improve visibility and attract potential employers. The structured design ensures that important information is organized and easily accessible for recruitment purposes.
+
 
 Job Portal - Employee Frontend (AngularJS)
 
