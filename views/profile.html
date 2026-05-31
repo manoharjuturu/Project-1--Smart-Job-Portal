@@ -1,0 +1,90 @@
+<div class="profile-container">
+    <div class="container">
+        <div class="page-header">
+            <h1><i class="fas fa-user-circle"></i> My Profile</h1>
+            <p>Manage your professional profile</p>
+        </div>
+
+        <div class="profile-form">
+            <div class="form-section">
+                <h2>Personal Information</h2>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Full Name *</label>
+                        <input type="text" ng-model="profile.name" placeholder="Enter your full name">
+                    </div>
+                    <div class="form-group">
+                        <label>Email *</label>
+                        <input type="email" ng-model="profile.email" placeholder="Enter your email">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Phone</label>
+                        <input type="tel" ng-model="profile.phone" placeholder="Enter your phone number">
+                    </div>
+                    <div class="form-group">
+                        <label>Location</label>
+                        <input type="text" ng-model="profile.location" placeholder="City, State">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>Professional Information</h2>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Job Title</label>
+                        <input type="text" ng-model="profile.title" placeholder="e.g., Software Developer">
+                    </div>
+                    <div class="form-group">
+                        <label>Years of Experience</label>
+                        <input type="text" ng-model="profile.experience" placeholder="e.g., 5 years">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Education</label>
+                    <input type="text" ng-model="profile.education" placeholder="e.g., BS in Computer Science">
+                </div>
+                <div class="form-group">
+                    <label>Bio</label>
+                    <textarea ng-model="profile.bio" 
+                              rows="4" 
+                              placeholder="Tell us about yourself..."></textarea>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>Skills</h2>
+                <div class="skills-input-group">
+                    <input type="text" 
+                           ng-model="newSkill" 
+                           ng-keyup="$event.keyCode === 13 && addSkill()" 
+                           placeholder="Add a skill and press Enter">
+                    <button class="add-skill-btn" ng-click="addSkill()">
+                        <i class="fas fa-plus"></i> Add
+                    </button>
+                </div>
+                <div class="skills-list" ng-if="profile.skills && profile.skills.length > 0">
+                    <span class="skill-tag" ng-repeat="(index, skill) in profile.skills">
+                        {{skill}}
+                        <i class="fas fa-times" ng-click="removeSkill(index)"></i>
+                    </span>
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button class="save-profile-btn" ng-click="saveProfile()">
+                    <i class="fas fa-save"></i> Save Profile
+                </button>
+            </div>
+
+            <div class="save-message" 
+                 ng-if="saveMessage" 
+                 ng-class="{'success': saveSuccess, 'error': !saveSuccess}">
+                {{saveMessage}}
+            </div>
+        </div>
+    </div>
+</div>
+

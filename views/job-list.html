@@ -1,0 +1,86 @@
+<div class="job-list-container">
+    <div class="container">
+        <div class="page-header">
+            <h1><i class="fas fa-briefcase"></i> Browse Jobs</h1>
+            <p>Find your dream job from thousands of opportunities</p>
+        </div>
+
+        <div class="search-section">
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" 
+                       ng-model="searchQuery" 
+                       ng-keyup="searchJobs()" 
+                       placeholder="Search jobs by title, company, or keywords..."
+                       class="search-input">
+            </div>
+            
+            <button class="filter-toggle" ng-click="showFilters = !showFilters">
+                <i class="fas fa-filter"></i> Filters
+            </button>
+        </div>
+
+        <div class="filters-panel" ng-show="showFilters">
+            <div class="filter-group">
+                <label>Location</label>
+                <input type="text" ng-model="filters.location" ng-change="searchJobs()" placeholder="e.g., San Francisco">
+            </div>
+            <div class="filter-group">
+                <label>Job Type</label>
+                <select ng-model="filters.type" ng-change="searchJobs()">
+                    <option ng-repeat="type in jobTypes" value="{{type}}">
+                        {{type || 'All Types'}}
+                    </option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>Category</label>
+                <select ng-model="filters.category" ng-change="searchJobs()">
+                    <option ng-repeat="cat in categories" value="{{cat}}">
+                        {{cat || 'All Categories'}}
+                    </option>
+                </select>
+            </div>
+            <button class="clear-filters-btn" ng-click="clearFilters()">
+                <i class="fas fa-times"></i> Clear All
+            </button>
+        </div>
+
+        <div class="results-info" ng-if="hasSearched">
+            <p>{{filteredJobs.length}} job{{filteredJobs.length !== 1 ? 's' : ''}} found</p>
+        </div>
+
+        <div class="no-search-message" ng-if="!hasSearched">
+            <i class="fas fa-search"></i>
+            <h3>Start Your Job Search</h3>
+            <p>Enter keywords, location, or use filters to find your perfect job</p>
+        </div>
+
+        <div class="jobs-grid" ng-if="hasSearched && filteredJobs.length > 0">
+            <div class="job-card" ng-repeat="job in filteredJobs" ng-click="viewJobDetails(job.id)">
+                <div class="job-card-header">
+                    <h3>{{job.title}}</h3>
+                    <span class="job-type-badge">{{job.type}}</span>
+                </div>
+                <div class="job-card-body">
+                    <p class="company-name"><i class="fas fa-building"></i> {{job.company}}</p>
+                    <p class="job-location"><i class="fas fa-map-marker-alt"></i> {{job.location}}</p>
+                    <p class="job-salary"><i class="fas fa-dollar-sign"></i> {{job.salary}}</p>
+                    <p class="job-category"><i class="fas fa-tag"></i> {{job.category}}</p>
+                </div>
+                <div class="job-card-footer">
+                    <span class="posted-date">Posted: {{job.postedDate}}</span>
+                    <button class="view-details-btn">View Details <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="no-results" ng-if="hasSearched && filteredJobs.length === 0">
+            <i class="fas fa-search"></i>
+            <h3>No jobs found</h3>
+            <p>Try adjusting your search or filters</p>
+            <button class="clear-filters-btn" ng-click="clearFilters()">Clear Filters</button>
+        </div>
+    </div>
+</div>
+

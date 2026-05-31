@@ -1,0 +1,35 @@
+<div class="auth-container">
+    <div class="auth-card">
+        <div class="auth-header">
+            <i class="fas fa-briefcase"></i>
+            <h1>Welcome Back</h1>
+            <p>Sign in to your account</p>
+        </div>
+
+        <form ng-submit="login()" class="auth-form">
+            <div class="form-group">
+                <label><i class="fas fa-envelope"></i> Email</label>
+                <input type="email" ng-model="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label><i class="fas fa-lock"></i> Password</label>
+                <input type="password" ng-model="password" placeholder="Enter your password" required>
+            </div>
+
+            <div class="message" ng-if="message" ng-class="messageType">
+                <i class="fas" ng-class="messageType === 'success' ? 'fa-check-circle' : 'fa-exclamation-circle'"></i>
+                {{message}}
+            </div>
+
+            <button type="submit" class="auth-btn">
+                <i class="fas fa-sign-in-alt"></i> Sign In
+            </button>
+        </form>
+
+        <div class="auth-footer">
+            <p>Don't have an account? <a href="#!/signup" ng-click="goToSignup()">Sign up</a></p>
+        </div>
+    </div>
+</div>
+

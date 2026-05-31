@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="jobPortalApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal - Employee Dashboard</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar" ng-if="isLoggedIn && $location.path() !== '/splash' && $location.path() !== '/login' && $location.path() !== '/signup'">
+        <div class="container">
+            <a href="#!/home" class="nav-brand" style="text-decoration: none; color: inherit;">
+                <i class="fas fa-briefcase"></i>
+                <span>HireNest</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#!/home" class="nav-link">Home</a></li>
+                <li><a href="#!/jobs" class="nav-link">Browse Jobs</a></li>
+                <li><a href="#!/applications" class="nav-link">My Applications</a></li>
+                <li><a href="#!/profile" class="nav-link">Profile</a></li>
+                <li><a href="#!/login" class="nav-link" ng-click="logout($event)">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div ng-view></div>
+    </main>
+/
+    <footer class="footer" ng-if="isLoggedIn && $location.path() !== '/splash' && $location.path() !== '/login' && $location.path() !== '/signup'">
+        <div class="container">
+            <p>&copy; 2026 HireNest. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.3/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.3/angular-route.min.js"></script>
+    
+    <script src="app/app.js"></script>
+    <script src="app/services/authService.js"></script>
+    <script src="app/services/jobService.js"></script>
+    <script src="app/services/applicationService.js"></script>
+    <script src="app/controllers/splashController.js"></script>
+    <script src="app/controllers/loginController.js"></script>
+    <script src="app/controllers/signupController.js"></script>
+    <script src="app/controllers/homeController.js"></script>
+    <script src="app/controllers/jobListController.js"></script>
+    <script src="app/controllers/jobDetailController.js"></script>
+    <script src="app/controllers/applicationController.js"></script>
+    <script src="app/controllers/profileController.js"></script>
+</body>
+</html>
+

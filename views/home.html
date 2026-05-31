@@ -1,0 +1,53 @@
+<div class="home-container">
+    <div class="container">
+        <div class="home-hero">
+            <h1>Welcome, {{currentUser.name}}!</h1>
+            <p class="hero-subtitle">Your job search journey starts here</p>
+        </div>
+
+        <div class="home-cards">
+            <div class="home-card" ng-click="goToJobs()">
+                <div class="card-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h3>Browse Jobs</h3>
+                <p>Explore thousands of job opportunities from top companies</p>
+                <button class="card-btn">Explore Jobs <i class="fas fa-arrow-right"></i></button>
+            </div>
+
+            <div class="home-card" ng-click="goToApplications()">
+                <div class="card-icon">
+                    <i class="fas fa-clipboard-list"></i>
+                </div>
+                <h3>My Applications</h3>
+                <p>Track the status of all your job applications in one place</p>
+                <button class="card-btn">View Applications <i class="fas fa-arrow-right"></i></button>
+            </div>
+
+            <div class="home-card" ng-click="goToProfile()">
+                <div class="card-icon">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <h3>My Profile</h3>
+                <p>Manage your professional profile and personal information</p>
+                <button class="card-btn">Edit Profile <i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+
+        <div class="home-stats">
+            <div class="stat-item">
+                <div class="stat-number">1000+</div>
+                <div class="stat-label">Active Jobs</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">500+</div>
+                <div class="stat-label">Companies</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">50K+</div>
+                <div class="stat-label">Job Seekers</div>
+            </div>
+        </div>
+    </div>
+</div>
+
