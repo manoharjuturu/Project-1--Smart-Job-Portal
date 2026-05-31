@@ -19,6 +19,11 @@ A modern and responsive job portal web application built with Angular that conne
 #  MY APLLICATIONS PAGE
 
 ![img alt](https://github.com/manoharjuturu/Project-1--Smart-Job-Portal/blob/8ae9f7ae17c6a9778928903120acc5c9722ed82a/Screenshot_31-5-2026_17345_127.0.0.1.jpeg)
+
+# PROFILE PAGE
+
+![img alt](https://github.com/manoharjuturu/Project-1--Smart-Job-Portal/blob/7fb2a18d2f76cad3332fb9d717dcd2fd3829959e/Screenshot_31-5-2026_17357_127.0.0.1.jpeg)
+
 Job Portal - Employee Frontend (AngularJS)
 
 A modern, responsive job portal application built with AngularJS for employees to browse jobs, apply for positions, and manage their applications.
